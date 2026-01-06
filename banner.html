@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New Partners Banner</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: transparent;
+  }
+
+  .banner {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .track {
+    display: inline-flex;
+    gap: 40px;
+    padding-left: 100%;
+    animation: scroll 28s linear infinite;
+  }
+
+  .badge {
+    background: rgba(255,255,255,0.15);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+  }
+</style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="track" id="track">
+      <span class="badge">🚀 New Partners · Sprint 01/23/26</span>
+      <span>Ascent Data</span>
+      <span>Business Technology Solutions of the Fox Valley</span>
+      <span>ComputerWorks</span>
+      <span>DataZang</span>
+      <span>Gradius IT Solutions</span>
+      <span>IsBill Tech Services</span>
+      <span>KDH Consulting</span>
+      <span>LINK UP TECHNOLOGIES INC</span>
+      <span>Mustang Computers</span>
+      <span>MYTechOnsite</span>
+      <span>Novem</span>
+      <span>Stack8 Systems Inc.</span>
+      <span>Willamette Valley IT</span>
+    </div>
+  </div>
+
+  <script>
+    // Duplicate content for seamless loop
+    const track = document.getElementById("track");
+    track.innerHTML += track.innerHTML;
+  </script>
+</body>
+</html>
