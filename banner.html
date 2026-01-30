@@ -9,7 +9,6 @@
     font-family: Inter, Arial, sans-serif;
     background: transparent;
   }
-
   .banner {
     background: linear-gradient(90deg, #667eea, #764ba2);
     color: white;
@@ -19,48 +18,42 @@
     font-size: 14px;
     font-weight: 600;
   }
-
   .track {
     display: inline-flex;
     gap: 40px;
     padding-left: 100%;
-    animation: scroll 28s linear infinite;
+    animation: scroll 35s linear infinite;
   }
-
   .badge {
     background: rgba(255,255,255,0.15);
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 12px;
   }
-
   @keyframes scroll {
     from { transform: translateX(0); }
     to   { transform: translateX(-100%); }
   }
 </style>
 </head>
-
 <body>
   <div class="banner">
     <div class="track" id="track">
-      <span class="badge">🚀 New Partners · Sprint 01/23/26</span>
-      <span>Ascent Data</span>
-      <span>Business Technology Solutions of the Fox Valley</span>
-      <span>ComputerWorks</span>
-      <span>DataZang</span>
-      <span>Gradius IT Solutions</span>
-      <span>IsBill Tech Services</span>
-      <span>KDH Consulting</span>
-      <span>LINK UP TECHNOLOGIES INC</span>
-      <span>Mustang Computers</span>
-      <span>MYTechOnsite</span>
-      <span>Novem</span>
-      <span>Stack8 Systems Inc.</span>
-      <span>Willamette Valley IT</span>
+      <span class="badge">🚀 New Partners · Sprint 01/26/26</span>
+      <span>AdRem Systems</span>
+      <span>Blalock Business Services</span>
+      <span>Circulent</span>
+      <span>CIRTEC - Círculo Tecnológico de México</span>
+      <span>CMIT Solutions of Cleveland SW and Akron</span>
+      <span>Global Business Solutions, LLC.</span>
+      <span>Network Remedy, Inc</span>
+      <span>Ohio Heart Group</span>
+      <span>On-Site Technical Services, Inc.</span>
+      <span>Resolvel Networks</span>
+      <span>Quantec Systems, LLC</span>
+      <span>Silotech Group, Inc.</span>
     </div>
   </div>
-
   <script>
     // Duplicate content for seamless loop
     const track = document.getElementById("track");
